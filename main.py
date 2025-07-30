@@ -1,11 +1,15 @@
 import tkinter as tk
 import pyautogui
-from ahk import AHK
+import webview
+
 
 class App:
     def __init__(self, root):
         self.root = root
         root.title("KHM-Controle")
+
+        webview.create_window('KHM', 'https://khm.robert-reihs.at/')
+        webview.start()
 
         # Language buttons
         lang_frame = tk.Frame(root)
@@ -56,14 +60,8 @@ class App:
 
 
 if __name__ == "__main__":
-
-
-    ahk = AHK()
-
-    all_windows = ahk.list_windows() 
-    print(all_windows)
-
-
     root = tk.Tk()
     app = App(root)
     root.mainloop()
+
+    

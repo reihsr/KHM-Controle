@@ -1,6 +1,5 @@
 #!/bin/bash
 WID=$(xdotool search --name "khm")
 echo $WID
-xdotool windowfocus $WID
-xdotool key "Return"
-sleep 4
+xdotool windowactivate $WID
+xdotool key --window $WID "Return"

@@ -1,6 +1,6 @@
 import tkinter as tk
 import pyautogui
-from ahk import AHK
+import subprocess
 
 class App:
     def __init__(self, root):
@@ -53,16 +53,9 @@ class App:
         # Define keyboard shortcut for triggering camera
         pyautogui.hotkey('enter')
 
-
-
 if __name__ == "__main__":
 
-
-    ahk = AHK()
-
-    all_windows = ahk.list_windows() 
-    print(all_windows)
-
+    subprocess.run(["powershell", "pwd"], shell=True)
 
     root = tk.Tk()
     app = App(root)

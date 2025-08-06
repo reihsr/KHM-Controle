@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard id="custom-flags" format="3.2">
+  <include file="key_defs.xml"/>
+  
+  <box orientation="vertical">
+    <!-- Country Flags Row -->
+    <panel filename="custom-flags" border="2">
+      <box orientation="horizontal">
+        <key id="DE" char="🇩🇪" tooltip="German">
+          <keysym>KP_1</keysym>
+        </key>
+        <key id="GB" char="🇬🇧" tooltip="British">
+          <keysym>KP_2</keysym>
+        </key>
+        <key id="FR" char="🇫🇷" tooltip="French">
+          <keysym>KP_3</keysym>
+        </key>
+        <key id="IT" char="🇮🇹" tooltip="Italian">
+          <keysym>KP_4</keysym>
+        </key>
+      </box>
+    </panel>
+    
+    <!-- Control Buttons Row -->
+    <panel filename="custom-controls" border="2">
+      <box orientation="horizontal">
+        <key id="RESET" char="Reset" tooltip="Reset (Escape)">
+          <keysym>Escape</keysym>
+        </key>
+        <key id="CAPTURE" char="Take Image" tooltip="Take Image (Enter)">
+          <keysym>Return</keysym>
+        </key>
+      </box>
+    </panel>
+  </box>
+</keyboard>
